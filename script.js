@@ -37,7 +37,7 @@ function createWeeks(month, year) {
     let day = new Date().getDate();
     document.querySelectorAll(".sidebar__heading")[0].innerHTML = `${today}<br>${month} ${day}`;
 
-    const daysInMonth = (year, month) => new Date(year, new Date(Date.parse(month +" 1, 2023")).getMonth()+1, 0).getDate();
+    const daysInMonth = (year, month) => new Date(year, new Date(Date.parse(month +" 1, 2023")).getMonth()+1, 0).getDate()-1;
 
     let currentDay = new Date().getDate();
     let res = daysInMonth(year, month);
