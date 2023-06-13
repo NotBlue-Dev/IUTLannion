@@ -1,0 +1,12 @@
+
+#locate > article:first-child > div {
+    background-color: var(--gris-fonce);
+    display: flex;
+    justify-content: center;
+}
+
+#cards > div {
+    margin-bottom: 6vw;
+}
+
+/* j'ai fais le styleGlobal.css (Notblue = Enzo) */

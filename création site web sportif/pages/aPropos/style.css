@@ -1,0 +1,175 @@
+
+
+
+body{
+    background-color: #FEFEFE;
+}
+strong {
+    font-size: 2vw !important;
+    font-weight: 900;
+}
+
+p {
+
+    text-align: center;
+}
+
+main header {
+    background-color: #5954A9;
+}
+main {
+    margin: 7vw 0vw;
+    font-size: 1em;
+}
+
+th p {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+
+
+header div h2{
+    color: #FEFEFE;
+    margin: 0vw 6vw;
+    font-size: 2vw;
+}
+.container {
+    background-color: #5954A9;
+    display:inline-flex;
+    color: #FEFEFE;
+    margin: 5%;
+}
+
+header section p{
+    text-align: left;
+    margin: 2vw 6vw;
+    display: flex;
+    width: 35vw;
+    line-height: 1.8vw;
+    font-weight: 100;
+}
+
+
+main div section figure {
+    background-color: #ebebeb;
+    display:flex;
+    justify-content: center;
+}
+.nous {
+    width: 23vw;
+    height: 21vw;
+    margin-left: 5vw;
+    margin-top: 1vw;
+}
+
+.carte{
+    margin-left: 6vw;
+    width: 70vw;
+    height: 32vw;
+}
+
+
+
+.big{
+    font-size: 4vw;
+} 
+
+table { 
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 7vw;
+    display:flex;
+    flex-direction: row;
+}
+
+th{
+    flex-grow: 1;
+    padding: 2em;
+}
+
+.new{
+    text-align: left;
+    margin-left: 14vw;
+    margin-bottom: 3vw;
+    font-size: 1.9vw;
+}
+.italie {
+    display: flex;
+    margin: auto;
+    width: 71vw;
+    height: 32vw;
+}
+
+main div  {
+    background: #FEFEFE;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+main div  .travel{ 
+    margin-right: 13vw;
+    margin-left: 13vw;
+    margin-top: 4vw;
+    font-size: 1.1vw;
+}
+@media screen and (max-width: 750px) {
+    header section p {
+        line-height: 2.8vw;
+        text-align: center;
+        width: 56vw;
+    }
+
+    header div h2 {
+        font-size: 4vw;
+        margin-top: 5vw;
+        font-family: 'LeagueSpartan';
+        text-align: center;
+    }
+
+    strong {
+        font-size: 4.5vw !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 4.2vw !important;
+    }
+
+    .new {
+        font-size: 2.9vw;
+    }
+
+    tr {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .big {
+        font-size: 11vw !important;
+    }
+
+    main div .travel {
+        font-size: 2.1vw;
+    }
+
+    th p {
+        font-size: 2.2vw;
+        margin-top: 1vw;
+    }
+
+    .carte {
+        width: 90vw;
+        height: 43vw;
+    }
+
+    .nous {
+        margin-bottom: 7vw;
+        margin-left: 0vw;
+    }
+}

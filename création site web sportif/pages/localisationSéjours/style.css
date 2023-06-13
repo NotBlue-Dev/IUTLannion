@@ -1,0 +1,189 @@
+article > div, article img > div {
+    display: flex;
+    gap: 4vw;
+}
+
+article {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 9vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+article > div p, li, article img > div p, figcaption {
+    font-size: 0.95vw;
+}
+
+button {
+    padding: 1.2vw 4vw !important;
+    margin-left: 0 !important;
+}
+
+.prix {
+    margin-top: 1.4vw;
+    margin-bottom: 1vw;
+    font-size: 1.1vw;
+}
+bold {
+    font-weight: 900;
+}
+
+figure > div img {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 0.4vw;
+}
+
+figure {
+    margin-top: 1vw;
+}
+
+#lieux > h2 {
+    text-align: center;
+    margin-bottom: 3.5vw;
+}
+
+.pcTitle {
+    display: block;
+}
+
+.phoneTitle {
+    display: none;
+}
+
+#lieux figure > img {
+    width: 27vw;
+    height: 17vw;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+figure > div {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0.7vw;
+}
+
+article > div > img {
+    width: 50vw;
+    height: 28vw;
+}
+
+#tablo > div {
+    justify-content: center;
+    text-align: center;
+    gap: 9vw;
+}
+
+.vl {
+    border-left: 0.3vw solid var(--violet-clair);
+    height: 13vw;
+    margin-top: 2vw;
+
+}
+
+#tablo > div > div > p {
+    margin-top: 2vw;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+
+
+@media (max-width: 700px) and (max-width: 900px ) {
+    .pcTitle {
+        display: none;
+    }
+    .phoneTitle {
+        display: block;
+        margin-left: 10vw;
+        font-size: 3vw;
+    }
+    article > div, article img > div {
+        flex-direction: column;
+        gap: 1vw;
+    }
+    .txt {
+        order: 999;
+        text-align: center;
+    }
+
+    article > div p, li, article img > div p, figcaption {
+        font-size: 1.9vw ;
+    }
+
+    article > div > img {
+        width: 70vw;
+        height: 39vw;
+        align-self: center;
+    }
+
+    button {
+        padding: 2vw 5.5vw !important;
+        margin: 0.5vw 1vw;
+        font-size: 2vw !important;
+    }
+
+    .prix { 
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        font-size: 1.8vw !important;
+    }
+
+    .icon  {
+        background-color: red;
+        margin:0;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    #lieux figcaption {
+        text-align: right;
+        font-size: 2.5vw;
+    }
+
+    .reverse {
+        flex-direction: row !important;
+    }
+
+    #lieux h3 {
+        font-size: 2.9vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    #tablo > div > div > p {
+
+        font-size: 2vw;
+    }
+
+    .reverse figcaption {
+        text-align: left !important;
+    }
+
+    #lieux figure {
+        display: flex;
+        align-items: flex-start;
+        gap: 2vw;
+        flex-direction: row-reverse;
+    }
+
+    figure {
+        margin-top: 7vw;
+    }
+
+}

@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'SUI';
+    src: url('../../assets/fonts/LeagueSpartan/LeagueSpartan-ExtraBold.ttf') format('truetype');
+  }
+
+.rectangle{
+    border: 650px solid #EBEBEB;
+    /* position: absolute;
+    z-index: 0; */
+    margin-bottom: 150px;
+}
+
+.Carte1{
+    position: absolute;
+    display: flex;
+    top: 550px;
+    left: 35%;
+    z-index: 1;
+}
+
+/*5954A9*/
+.btn1{
+    padding: 30px 109px;
+    background-color: #5954A9;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 450;
+    font-family: 'SUI', sans-serif;
+    position: absolute;
+    left: 37.85%;
+    top: 1295px;
+    z-index: 6;
+  }
+
+  .btn2{
+    padding: 30px 109px;
+    background-color: #5954A9;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 450;
+    font-family: 'SUI', sans-serif;
+    position: absolute;
+    left: 37.85%;
+    top: 2737px;
+    z-index: 6;
+  }
+
+.Carte2{
+    position: absolute;
+    display: flex;
+    top: 2000px;
+    left: 35%;
+    z-index: 1;
+}
+
+.loupe2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2080px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.7);
+    z-index: 2;
+    
+}
+
+.loupe1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 630px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transform: scale(1.7);
+    z-index: 2;
+    
+}
+
+.prix_initial1{
+    position: absolute;
+    left: 61%;
+    top: 635px;
+    font-size: 5em;
+    font-weight: bold;
+    z-index: 4;
+}
+
+.prix_solder1{
+    position: absolute;
+    left: 60%;
+    top: 775px;
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    z-index: 4;
+}
+
+.petit_rectangle1{
+    position: absolute;
+    left: 59.3%;
+    top: 630px;
+    transform: scale(0.9);
+    z-index: 3;
+}
+
+.ovale1{
+    position: absolute;
+    left: 56.4%;
+    top: 750px;
+    transform: scale(0.9);
+    z-index: 3;
+}
+
+.trait1{
+    position: absolute;
+    left: 60.2%;
+    top: 676px;
+    transform: scale(0.9);
+    z-index: 5;
+}
+
+.prix_initial2{
+    position: absolute;
+    left: 61%;
+    top: 2085px;
+    font-size: 5em;
+    font-weight: bold;
+    z-index: 4;
+}
+
+.prix_solder2{
+    position: absolute;
+    left: 60%;
+    top: 2225px;
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    z-index: 4;
+}
+
+.petit_rectangle2{
+    position: absolute;
+    left: 59.3%;
+    top: 2080px;
+    transform: scale(0.9);
+    z-index: 3;
+}
+
+.ovale2{
+    position: absolute;
+    left: 56.4%;
+    top: 2200px;
+    transform: scale(0.9);
+    z-index: 3;
+}
+
+.trait2{
+    position: absolute;
+    left: 60.2%;
+    top: 2126px;
+    transform: scale(0.9);
+    z-index: 5;
+}
+
+/* Pour le format téléphone*/
+@media screen and (max-width: 480px){
+    .rectangle{
+        border: 200px solid #EBEBEB;
+        margin-bottom: 55px;
+    }
+
+    .btn1{
+        padding: 11px 44px;
+        background-color: #5954A9;
+        color: white;
+        font-size: 0.7em;
+        text-decoration: none;
+        font-weight: 450;
+        font-family: 'SUI', sans-serif;
+        position: absolute;
+        left: 22%;
+        top: 485px;
+        z-index: 6;
+      }
+    
+      .btn2{
+        padding: 11px 44px;
+        background-color: #5954A9;
+        color: white;
+        font-size: 0.7em;
+        text-decoration: none;
+        font-weight: 450;
+        font-family: 'SUI', sans-serif;
+        position: absolute;
+        left: 22%;
+        top: 940px;
+        z-index: 6;
+      }
+
+    .Carte1{
+        position: absolute;
+        display: flex;
+        top: 100px;
+        left: 20%;
+        z-index: 1;
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+    }
+    
+    .Carte2{
+        position: absolute;
+        display: flex;
+        top: 555px;
+        left: 20%;
+        z-index: 1;
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+    }
+
+    .loupe2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 545px;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        transform: scale(0.5);
+        z-index: 2;
+        
+    }
+
+    .loupe1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        transform: scale(0.5);
+        z-index: 2;
+        
+    }
+
+    .prix_initial1{
+        position: absolute;
+        left: 55.4%;
+        top: 262px;
+        font-size: 1.5em;
+        font-weight: bold;
+        z-index: 4;
+    }
+
+    .prix_solder1{
+        position: absolute;
+        left: 55%;
+        top: 304px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white;
+        z-index: 4;
+    }
+
+    .petit_rectangle1{
+        position: absolute;
+        left: 33.5%;
+        top: 218px;
+        transform: scale(0.25);
+        z-index: 3;
+    }
+
+    .ovale1{
+        position: absolute;
+        left: 22%;
+        top: 230px;
+        transform: scale(0.25);
+        z-index: 3;
+    }
+
+    .trait1{
+        position: absolute;
+        left: 36.7%;
+        top: 269.45px;
+        transform: scale(0.25);
+        z-index: 5;
+    }
+
+    .prix_initial2{
+        position: absolute;
+        left: 55.4%;
+        top: 717px;
+        font-size: 1.5em;
+        font-weight: bold;
+        z-index: 4;
+    }
+
+    .prix_solder2{
+        position: absolute;
+        left: 55%;
+        top: 759px;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white;
+        z-index: 4;
+    }
+
+    .petit_rectangle2{
+        position: absolute;
+        left: 33.5%;
+        top: 673px;
+        transform: scale(0.25);
+        z-index: 3;
+    }
+
+    .ovale2{
+        position: absolute;
+        left: 22%;
+        top: 685px;
+        transform: scale(0.25);
+        z-index: 3;
+    }
+
+    .trait2{
+        position: absolute;
+        left: 36.7%;
+        top: 725px;
+        transform: scale(0.25);
+        z-index: 5;
+    }
+}

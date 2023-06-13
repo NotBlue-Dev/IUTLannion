@@ -1,0 +1,422 @@
+a {
+    text-decoration: none;
+    color: var(--gris-clair);
+}
+
+#accueil-img {
+    width: 100%;
+}
+
+#text{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 12vw;
+    color: white;
+    z-index: 0;
+}
+
+#accroche {
+    margin-top: 10vw;
+    margin-bottom: 0.5vw;
+    text-align: center;
+    font-size: 5.5vw;
+    font-family: 'LeagueSpartan';
+    font-weight: 900;
+    color: var(--gris-clair);
+    letter-spacing: -0.025em;
+}
+
+#accueil div p {
+    font-weight: 300;
+    font-size: 1vw;
+    padding-top: 2vw;
+}
+
+#best-offers > div, #new-offers > div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gris-fonce);
+    padding: 50px 0 ;
+    gap: 2vw;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    overflow: none;
+    background-color: var(--gris-clair);
+}
+
+.card > div {
+    margin-bottom: 6vw;
+    width: 17vw;
+    height: 21vw;
+
+}
+
+#presentation img{
+    width: 100%;
+}
+
+#content {
+    text-align: center;
+    padding: 1.5vw;
+}
+
+#content p {
+    font-weight: 300;
+    font-size: 0.8vw;
+    padding: 1.0vw 1.4vw;
+}
+
+#content strong {
+    font-size: 0.9vw;
+    font-weight: 900;
+    padding: 0;
+}
+
+#star {
+    height: max-content;
+}
+
+#star img {
+    width: 1vw;
+}
+
+button {
+    font-size: 0.9vw;
+    padding: 0.7vw 3vw;
+    margin: 0.3vw 1vw;
+    font-weight: 900;
+}
+
+.prix a {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: 'LeagueSpartan';
+    margin-left: -1.3vw;
+    position: absolute;
+}
+
+.prix {
+  position: absolute;
+  margin-top: -1.4vw;
+  background-color: var(--vert);
+  width: 4.5vw;
+  height: 2vw;
+  margin-left: 1vw;
+  text-align: center;
+}
+
+#div-inv {
+    visibility: hidden;
+}
+
+#association {
+    background-color: var(--violet-clair);
+    padding: 10px;
+    color: var(--gris-clair);
+}
+
+#association h1 {
+    color: var(--gris-clair);
+}
+
+#content-asso {
+    display: flex;
+    padding: 2vw 14vw;
+}
+
+#content-asso div {
+    padding: 0 3.2vw;
+}
+
+#content-asso p{
+    font-size: 1.5vw;
+    font-weight: 200;
+    text-align:center;
+    line-height: 150%;
+}
+
+#association img {
+    width: 220%;
+}
+
+#accroche-fin {
+    text-align: center;
+    padding: 7vw;
+}
+
+/*------------------------------------------*/
+@media (max-width: 601px) {
+    #accroche {
+        font-size: 7vw;
+        margin-top: 25vw;
+    }
+    #accueil div p {
+        font-size: 2vw;
+    }
+
+    #accueil { 
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #best-offers > div, #new-offers > div {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--gris-fonce);
+        padding: 50px 0 ;
+        gap: 10vw;
+        text-align: center;
+    }
+
+    .card {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+    .card > div {
+        margin-bottom: 6vw;
+        width: 60vw;
+        height: 92vw;
+    }
+    
+    #content {
+        text-align: center;
+        padding: 6vw 6.5vw;
+    }
+    
+    #content p {
+        font-weight: 300;
+        font-size: 0.7em;
+        padding: 1.0vw 1.4vw;
+    }
+    
+    #content strong {
+        font-size: 0.8em;
+        font-weight: 900;
+        padding: 0;
+    }
+
+    #content-text p {
+        margin-top: 2vw;
+    }
+    
+    #star {
+        margin: 1.8vw;
+    }
+
+    #star img {
+        width: 3vw;
+    }
+    
+    button {
+        font-size: 0.8em;
+        padding: 2vw 6vw;
+    }
+    .prix a {
+        margin-top: 3vw;
+        font-size: 0.8em;
+        font-weight: 600;
+        font-family: 'LeagueSpartan';
+        margin-left: -3.5vw;
+        position: absolute;
+    }
+
+    .prix {
+    position: absolute;
+    margin-top: -4.6vw;
+    background-color: var(--vert);
+    width: 13vw;
+    height: 8vw;
+    margin-left: 7vw;
+    text-align: center;
+    }
+    #div-inv {
+        visibility: hidden;
+    }
+    
+    #association {
+        background-color: var(--violet-clair);
+        padding: 10px;
+        color: var(--gris-clair);
+    }
+    
+    #association h1 {
+        color: var(--gris-clair);
+    }
+    
+    #content-asso {
+        display: flex;
+        padding: 2vw 9vw;
+        flex-direction: column;
+    }
+    
+    #content-asso div {
+        padding: 0 3.2vw;
+    }
+    
+    #content-asso p{
+        font-size: 3vw;
+        font-weight: 200;
+        text-align:center;
+        line-height: 150%;
+    }
+
+    #content-asso-img {
+        text-align: center;
+        margin: 30px;
+    }
+    
+    #association img {
+        width: 90%;
+    }
+    
+    #accroche-fin {
+        text-align: center;
+        padding: 7vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    #accroche {
+        font-size: 7vw;
+    }
+    #accueil div p {
+        font-size: 2vw;
+    }
+
+    #accueil {
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #best-offers > div, #new-offers > div {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--gris-fonce);
+        padding: 50px 0 ;
+        gap: 8vw;
+        text-align: center;
+    }
+
+    .card {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+    .card > div {
+        margin-bottom: 6vw;
+        width: 60vw;
+        height: 92vw;
+    }
+    
+    #content {
+        text-align: center;
+        padding: 6vw 8vw;
+    }
+    
+    #content p {
+        font-weight: 300;
+        font-size: 1.2em;
+        padding: 1.0vw 1.4vw;
+    }
+    
+    #content strong {
+        font-size: 1.3em;
+        font-weight: 900;
+        padding: 0;
+    }
+
+    #content-text p {
+        margin-top: 2vw;
+    }
+    
+    #star {
+        margin: 3vw;
+    }
+
+    #star img {
+        width: 3vw;
+    }
+    
+    button {
+        font-size: 1.7em;
+        padding: 1.7vw 11vw;
+    }
+    .prix a {
+        margin-top: 3vw;
+        font-size: 1.2em;
+        font-weight: 600;
+        font-family: 'LeagueSpartan';
+        margin-left: -3.5vw;
+        position: absolute;
+    }
+
+    .prix {
+    position: absolute;
+    margin-top: -4.6vw;
+    background-color: var(--vert);
+    width: 13vw;
+    height: 8vw;
+    margin-left: 7vw;
+    text-align: center;
+    }
+    #div-inv {
+        visibility: hidden;
+    }
+    
+    #association {
+        background-color: var(--violet-clair);
+        padding: 10px;
+        color: var(--gris-clair);
+    }
+    
+    #association h1 {
+        color: var(--gris-clair);
+    }
+    
+    #content-asso {
+        display: flex;
+        padding: 2vw 9vw;
+        flex-direction: column;
+    }
+    
+    #content-asso div {
+        padding: 0 3.2vw;
+    }
+    
+    #content-asso p{
+        font-size: 3vw;
+        font-weight: 200;
+        text-align:center;
+        line-height: 150%;
+    }
+
+    #content-asso-img {
+        text-align: center;
+        margin: 30px;
+    }
+    
+    #association img {
+        width: 90%;
+    }
+    
+    #accroche-fin {
+        text-align: center;
+        padding: 7vw;
+    }
+}
