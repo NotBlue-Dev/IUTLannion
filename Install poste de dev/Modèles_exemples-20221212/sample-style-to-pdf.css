@@ -1,0 +1,35 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: aqua;
+   margin: 0;
+   padding: 0;
+}
+
+section {
+   position: relative;
+   height: 100vh;
+}
+
+.bottom {
+   position: absolute;
+   bottom: 0;
+   border: 1px dotted red;
+   min-height: 5rem;
+}
+
+/* @page { size: A4 } */
+
+@media print {
+   section {
+      border: 1px solid black;
+      width: 8.26in;
+      height: 11.66in;
+      margin: 0;
+      /* change the margins as you want them to be. */
+      page-break-after: always;
+   }
+}

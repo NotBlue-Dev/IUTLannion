@@ -1,0 +1,6 @@
+
+retirez les bigpapoo + changez les directory des dockers
+
+pull les images
+
+run final.php

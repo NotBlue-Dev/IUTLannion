@@ -1,0 +1,22 @@
+<?php
+   $lines = file('sample-model.data');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title><?php echo htmlentities($lines[0]) ?></title>
+</head>
+<body>
+   <h1><?php echo htmlentities($lines[1]) ?></h1>
+   <ul>
+<?php
+   for ($loop = 2; $loop < count($lines); $loop+=2) {
+      echo '<li>' . htmlentities($lines[$loop]) . ' ' . htmlentities($lines[$loop + 1]) . "</li>\n";
+   }
+?>
+   </ul>
+</body>
+</html>

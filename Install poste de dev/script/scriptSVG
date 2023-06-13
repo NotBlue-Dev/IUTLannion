@@ -1,0 +1,1 @@
+docker container run -ti --rm -v $1:/work sae103-imagick "magick $2 -grayscale Rec709Luminance -crop 600x550+0+0 -resize 200x200 $3"
