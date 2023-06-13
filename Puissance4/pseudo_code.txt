@@ -1,0 +1,288 @@
+programme puissance4 c'est
+    /*
+        NL : entier nombre de lignes
+        NC : entier nombre de colonnes
+        JAUNE : entier qui identiie la valeur de JAUNE
+        ROUGE : entier qui identiie la valeur de ROUGE
+        VIDE : entier qui identiie la valeur de VIDE
+    */
+    constante entier NL := 6;
+    constante entier NC := 7;
+    constante entier JAUNE := 1;
+    constante entier ROUGE := 2;
+    constante entier VIDE := 0;
+
+    // on définit tableau2D avec un type tableau de entier, de longueur définit par NL et NC 
+    type tableau2D = tableau[1..NL, 1..NC] de entier;
+
+    /****************************************
+    *       Definition des procédures       *
+    ****************************************/
+
+    /*
+        Nom procédure : initialisationTab       
+        Brief : remplis le tableau 2 dimensions de 0 (en remplacant les autres valeur si besoins)
+            [
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0]
+            ]
+
+            les valeurs du tableau correspondrant comme suit :
+            0 = pas de pions
+            1 = jaune
+            2 = rouge
+
+        paramètre :
+            - tab : tableau2D le tableau qui sera initialiser
+            entF/sortF car on modifie le tableau
+
+    */    
+    procédure initialisationTab(entF/sortF tab : tableau2D)
+
+
+
+    /*  
+        Nom procédure : afficheGrille
+        brief : affiche la grille en fonction du contenue du tableau
+            pour chaque valeur du tableau :  
+            0 = print ### en blanc car pas de pions
+            1 = print ### en jaune
+            2 = print ### en rouge 
+        
+        parametres : 
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF seulement car on ne modifie pas le tableau
+    */
+    procédure afficheGrille(entF tab : tableau2D);
+
+
+
+    /*  
+        Nom procédure : tour
+        Brief : 
+            permet de jouer un tour
+            demande a l'utilisateur de choisir une colonne
+            vérifie si la colonne est valide
+            vérifie si la colonne est pleine
+            ajoute le pion dans la colonne
+
+        parametres :
+            - joueur : chaine de caractere contenant le joueur qui doit jouer, entF seulement car on ne modifie pas la valeur
+            - tab : tableau2D contenant toute les valeurs de la grille, entF/sortF car on modifie le tableau
+            - couleur : entier contenant la couleur du pion a ajouter, entF seulement car on ne modifie pas la valeur
+            
+    */
+    procédure tour(entF joueur : chaine(20), entF/sortF tab : tableau2D, entF couleur : entier);
+
+
+
+    /*  
+        Nom procédure : verifNom
+        Brief : 
+            permet de vérifier si le nom du joueur est valide
+            si le nom est vide ou contient des chiffres ou est trop long, on redemande le nom
+
+        parametres :
+            - joueur : chaine de caractere contenant le joueur qui doit jouer, entF/sortF car on modifie la valeur de joueur
+    */
+    procédure verifNom(entF/sortF joueur : chaine(20));
+
+
+
+    /*  
+        Nom fonction : egaliter
+            permet de vérifier si la grille est pleine
+            si la grille est pleine, on retourne vrai
+            sinon on retourne faux
+
+        parametres :
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF car on ne modifie pas le tableau
+        retourne :
+            VRAI si égaliter
+            FAUX si pas d'égaliter
+    */
+    fonction egaliter(entF tab : tableau2D) retourne booleen;
+
+
+
+    /*  
+        Nom fonction : verifLigne
+            permet de vérifier si il y a 4 pions alignés sur une ligne
+            si il y a 4 pions alignés sur une ligne, on retourne vrai
+            sinon on retourne faux
+
+        parametres :
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF seulement car on ne modifie pas le tableau
+        retourne : 
+            VRAI si il y'a un combo gagnant sur une ligne
+            FAUX si n'y a pas de combo gagnant sur une ligne
+    */
+    fonction verifLigne(entE tab : tableau2D) délivre booléen;
+
+
+
+    /*  
+        Nom fonction : verifColonne
+            permet de vérifier si il y a 4 pions alignés sur une colone
+            si il y a 4 pions alignés sur une colone, on retourne vrai
+            sinon on retourre faux
+
+        parametres :
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF seulement car on ne modifie pas le tableau
+        
+        retourne : 
+            VRAI si il y'a un combo gagnant sur une colonne
+            FAUX si n'y a pas de combo gagnant sur une colonne
+    */
+    fonction verifColone(entE tab : tableau2D) délivre booléen;
+
+
+
+    /*  
+        Nom fonction : verifDiagonaleGauche
+            permet de vérifier si il y a 4 pions alignés sur une diagonale gauche
+            si il y a 4 pions alignés sur une diagonale gauche, on retourne vrai
+            sinon on retourne faux
+
+        parametres :
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF seulement car on ne modifie pas le tableau
+
+        retourne : 
+            VRAI si il y'a un combo gagnant sur une diagonale gauche
+            FAUX si n'y a pas de combo gagnant sur une diagonale gauche
+    */
+    fonction verifDiagonaleGauche(entE tab : tableau2D) délivre booléen;
+
+
+
+    /*
+        Nom fonction : verifDiagonaleDroite
+            permet de vérifier si il y a 4 pions alignés sur une diagonale droite
+            si il y a 4 pions alignés sur une diagonale droite, on retourne vrai
+            sinon on retourne faux
+
+        parametres :
+            - tab : tableau2D contenant toute les valeurs de la grille
+            entF seulement car on ne modifie pas le tableau
+
+        retourne : 
+            VRAI si il y'a un combo gagnant sur une diagonale droite
+            FAUX si n'y a pas de combo gagnant sur une diagonale droite
+    */
+    fonction verifDiagonaleDroite(entE tab : tableau2D) délivre booléen;
+
+
+
+/****************************************
+*          Debut du programme           *
+****************************************/
+
+debut
+    /*déclaration des variables
+        - joueur1 : chaine de caractere contenant le nom du joueur 1
+        - joueur2 : chaine de caractere contenant le nom du joueur 2
+        - couleur : entier contenant la couleur du pion a ajouter
+        - gagnant : chaine de caractere contenant le status du jeux ou le nom du gagnant
+        - egaliter : booleen contenant vrai si il y a egaliter
+        - suivant : chain de caractere contenant le nom du joueur qui doit jouer
+        - rejouer : chain de caractere contenant la réponse de l'utilisateur pour rejouer
+    */
+    joueur1,joueur2,gagnant,suivant,rejouer : chaîne(20);
+    egaliter : booléen;
+    couleur := entier;
+
+    écrireEcran("
+    ______ _   _ _____ _____ _____  ___  _   _ _____ _____     ___ 
+    | ___ \ | | |_   _/  ___/  ___|/ _ \| \ | /  __ \  ___|   /   |
+    | |_/ / | | | | | \ `--.\ `--./ /_\ \  \| | /  \/ |__    / /| |
+    |  __/| | | | | |  `--. \`--. \  _  | . ` | |   |  __|  / /_| |
+    | |   | |_| |_| |_/\__/ /\__/ / | | | |\  | \__/\ |___  \___  |
+    \_|    \___/ \___/\____/\____/\_| |_|_| \_/\____|____/      |_/ 
+    ");
+
+    // entrer des nom
+    écrireEcran("Nom du joueur 1 :");
+    lireClavier(joueur1);
+    verifNom(entE/sortE joueur1);
+    écrireEcran("Nom du joueur 2 :");
+    lireClavier(joueur2);
+    verifNom(entE/sortE joueur2);
+
+    /*
+        initialisation des variables pour lancer le jeux avec comme premier joueur le joueur 1
+        - couleur := JAUNE qui est la couleur du joueur 1
+        - suivant := joueur1 qui est le nom du joueur 1
+        - egaliter := faux car il n'y a pas d'egaliter (valeur d'initialisation)
+        - rejouer := "" car on a pas encore la valeur de rejouer (valeur d'initialisation)
+    */
+    couleur := JAUNE;
+    suivant := joueur1;
+    egaliter := faux;
+    gagnant := "jeux";  
+    rejouer := "";
+
+    // on initialise le tableau a 0 pour pouvoir commencer
+    initialisationTab(entE/sortF tab);
+
+    tant que (gagnant == "jeux") faire
+        //affichage de la grille et joue le tour
+        afficheGrille(entE tableau2D);
+        tour(entE suivant, entE/sortE tableau2D, entE couleur);
+
+        // verifie si on a une égaliter pour le tour
+        egaliter := egaliter(entE/sortE tableau2D);
+
+        //vérifie si il y a un gagnat sur un des axes pour le tour ou si il y'a une égaliter
+        si (verifLigne(entE/sortE tableau2D) || verifColone(entE/sortE tableau2D) || verifDiagonaleGauche(entE/sortE tableau2D) || verifDiagonaleDroite(entE/sortE tableau2D) || egaliter) alors
+            
+            
+            si(egaliter) alors
+                //permet l'arret de la boucle 
+                gagnant := "egaliter";
+                écrireEcran("Aucun vainqueur, il y a égalité, voulez-vous ? (y/n)");
+            sinon
+                //on met le nom du gagnant dans gagnant
+                gagnant := suivant;
+                écrireEcran(gagnant, "a gagné, voulez-vous rejouer ? (y/n)");
+            finsi
+
+            répéter
+                lireClavier(rejouer);
+                si (rejouer == "y") alors
+                    // on relance la boucle avec une nouvelle grille 
+                    gagnant := "jeux";
+                    initialisationTab(entE/sortE tableau2D);
+                    écrireEcran("Le jeux va recommencer !");
+                sinon si (rejouer == "n") alors
+                    // on arrete la boucle
+                    gagnant := "fin";
+                    écrireEcran("Le jeux est terminé !");
+                sinon
+                    écrireEcran("Erreur, veuillez réessayer");
+                finsi
+            jusqu'à (rejouer == "y" || rejouer == "n");
+
+        finsi
+
+        //change de joueur et de couleur
+        si (couleur == JAUNE) alors
+            couleur := ROUGE;
+            suivant := joueur2;
+        sinon
+            couleur := JAUNE;
+            suivant := joueur1;
+        finsi
+ 
+    finfaire
+
+    écrireEcran("Merci d'avoir joué !");
+
+fin

@@ -1,0 +1,131 @@
+Nom procédure : initialisationTab       
+Brief : remplis le tableau 2 dimensions de 0 (en remplacant les autres valeur si besoins)
+    [
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0]
+    ]
+
+    les valeurs du tableau correspondrant comme suit :
+    0 = pas de pions
+    1 = jaune
+    2 = rouge
+
+    paramètre :
+    - tab : tableau2D le tableau qui sera initialiser
+    entF/sortF car on modifie le tableau
+
+
+
+Nom procédure : afficheGrille
+brief : affiche la grille en fonction du contenue du tableau
+    pour chaque valeur du tableau :  
+    0 = print ### en blanc car pas de pions
+    1 = print ### en jaune
+    2 = print ### en rouge 
+
+    parametres : 
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF seulement car on ne modifie pas le tableau
+
+
+
+Nom procédure : tour
+Brief : 
+    permet de jouer un tour
+    demande a l'utilisateur de choisir une colonne
+    vérifie si la colonne est valide
+    vérifie si la colonne est pleine
+    ajoute le pion dans la colonne
+
+    parametres :
+        - joueur : chaine de caractere contenant le joueur qui doit jouer, entF seulement car on ne modifie pas la valeur
+        - tab : tableau2D contenant toute les valeurs de la grille, entF/sortF car on modifie le tableau
+        - couleur : entier contenant la couleur du pion a ajouter, entF seulement car on ne modifie pas la valeur
+   
+
+
+Nom procédure : verifNom
+Brief : 
+    permet de vérifier si le nom du joueur est valide
+    si le nom est vide ou contient des chiffres ou est trop long, on redemande le nom
+
+    parametres :
+        - joueur : chaine de caractere contenant le joueur qui doit jouer, entF/sortF car on modifie la valeur de joueur
+
+
+
+Nom fonction : egaliter
+    permet de vérifier si la grille est pleine
+    si la grille est pleine, on retourne vrai
+    sinon on retourne faux
+
+    parametres :
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF car on ne modifie pas le tableau
+    retourne :
+        VRAI si égaliter
+        FAUX si pas d'égaliter
+
+
+
+
+Nom fonction : verifLigne
+    permet de vérifier si il y a 4 pions alignés sur une ligne
+    si il y a 4 pions alignés sur une ligne, on retourne vrai
+    sinon on retourne faux
+
+    parametres :
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF seulement car on ne modifie pas le tableau
+    retourne : 
+        VRAI si il y'a un combo gagnant sur une ligne
+        FAUX si n'y a pas de combo gagnant sur une ligne
+ 
+
+
+Nom fonction : verifColonne
+    permet de vérifier si il y a 4 pions alignés sur une colone
+    si il y a 4 pions alignés sur une colone, on retourne vrai
+    sinon on retourre faux
+
+    parametres :
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF seulement car on ne modifie pas le tableau
+
+    retourne : 
+        VRAI si il y'a un combo gagnant sur une colonne
+        FAUX si n'y a pas de combo gagnant sur une colonne
+
+
+
+Nom fonction : verifDiagonaleGauche
+    permet de vérifier si il y a 4 pions alignés sur une diagonale gauche
+    si il y a 4 pions alignés sur une diagonale gauche, on retourne vrai
+    sinon on retourne faux
+
+    parametres :
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF seulement car on ne modifie pas le tableau
+
+    retourne : 
+        VRAI si il y'a un combo gagnant sur une diagonale gauche
+        FAUX si n'y a pas de combo gagnant sur une diagonale gauche
+
+
+
+Nom fonction : verifDiagonaleDroite
+    permet de vérifier si il y a 4 pions alignés sur une diagonale droite
+    si il y a 4 pions alignés sur une diagonale droite, on retourne vrai
+    sinon on retourne faux
+
+    parametres :
+        - tab : tableau2D contenant toute les valeurs de la grille
+        entF seulement car on ne modifie pas le tableau
+
+    retourne : 
+        VRAI si il y'a un combo gagnant sur une diagonale droite
+        FAUX si n'y a pas de combo gagnant sur une diagonale droite
